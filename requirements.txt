@@ -1,0 +1,10 @@
+faiss-cpu
+sentence-transformers
+PyPDF2
+fastapi
+uvicorn
+requests
+python-dotenv
+motor
+pymongo
+aiofiles

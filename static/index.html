@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroBot - Tomato Farming Expert</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>AgroBot | Tomato Expert</h1>
+            <p class="subtitle">Simple and practical advice for farmers (English & Tamil)</p>
+        </header>
+
+        <div id="chat-container" class="chat-box">
+            <div class="message bot">
+                <div class="bubble">
+                    Welcome! I help with tomato farming questions. You can ask about soil, water, or pests.<br>
+                    வரவேற்பு! தக்காளி விவசாயம் சார்ந்த கேள்விகளுக்கு நான் உதவுகிறேன். மண், நீர் அல்லது பூச்சிகள் பற்றி
+                    நீங்கள் கேட்கலாம்.
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="quick-queries">
+                <button onclick="askQuick('What is the ideal soil pH?')">Soil pH / மண் pH</button>
+                <button onclick="askQuick('How to irrigate for high yield?')">Water / தண்ணீர்</button>
+                <button onclick="askQuick('Best soil type?')">Soil Type / மண் வகை</button>
+            </div>
+
+            <form id="chat-form" class="input-area">
+                <button type="button" id="mic-btn" class="icon-btn">🎤</button>
+                <input type="text" id="user-input"
+                    placeholder="Speak or Type your question... / பேசவும் அல்லது தட்டச்சு செய்யவும்..."
+                    autocomplete="off">
+                <button type="submit" id="send-btn">Send / அனுப்பு</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
